@@ -7,5 +7,6 @@ export default {
     nodemailerUser: process.env.NODEMAILER_USER,
     nodemailerPassword: process.env.NODEMAILER_PASSWORD,
     newlineEmail: process.env.NEWLINE_EMAIL,
-    secretKeyRecaptcha: process.env.SECRET_KEY_RECAPTCHA
+    secretKeyRecaptcha: process.env.SECRET_KEY_RECAPTCHA,
+    urlFront: process.env.URL_FRONT,
 }
