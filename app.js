@@ -4,7 +4,7 @@ import config from "./src/config/config.js";
 import mailerRouter from './src/router/mailer.route.js';
 
 const app = express();
-app.use(cors());
+app.use(cors({ origin: config.urlFront }));
 app.use(express.json());
 
 app.use('/api/mailer', mailerRouter);
