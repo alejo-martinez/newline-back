@@ -8,7 +8,7 @@ export const createMail = async (userEmail, data, type) => {
             from: `"Formulario Web" <${config.newlineEmail}>`,
             to: config.newlineEmail,
             replyTo: userEmail,
-            subject: 'Nuevo mensaje del formulario web.',
+            subject: `Nuevo mensaje del formulario web de ${data.name}.`,
             html: generateEmailHtml(data, type)
         });
     } catch (error) {
